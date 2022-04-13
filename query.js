@@ -19,9 +19,9 @@ const guardarCandidato = async (datos) => {
     const result = await pool.query(query);
 
     return result;
-  } catch (err) {
-    console.log('Error: ', err);
-    return err;
+  } catch (error) {
+    console.log('Error: ', error);
+    return error;
   }
 };
 
@@ -48,8 +48,8 @@ const editCandidato = async (datos) => {
     const res = await pool.query(query);
     return res;
   } catch (error) {
-    console.log('Error: ', err);
-    return err;
+    console.log('Error: ', error);
+    return error;
   }
 };
 const eliminarCandidato = async (id) => {
@@ -60,8 +60,8 @@ const eliminarCandidato = async (id) => {
     const resul = await pool.query(query);
     return resul.rows;
   } catch (error) {
-    console.log('Error: ', err);
-    return err;
+    console.log('Error: ', error);
+    return error;
   }
 };
 
@@ -101,8 +101,8 @@ const getHistorial = async () => {
     //Un arreglos de arreglos
     return res.rows;
   } catch (error) {
-    console.log('Error: ', err);
-    return err;
+    console.log('Error: ', error);
+    return error;
   }
 };
 
