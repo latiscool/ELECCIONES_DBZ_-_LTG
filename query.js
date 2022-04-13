@@ -33,8 +33,8 @@ const getCandidatos = async () => {
     const res = await pool.query(query);
     return res.rows;
   } catch (error) {
-    console.log('Error: ', err);
-    return err;
+    console.log('Error: ', error);
+    return error;
   }
 };
 
