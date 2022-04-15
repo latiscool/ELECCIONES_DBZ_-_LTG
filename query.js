@@ -1,3 +1,4 @@
+const pg = require('pg');
 const { Pool } = require('pg');
 
 const pool = new Pool({
